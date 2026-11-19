@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071326">
+<meta name="description" content="ام احمد للخدمات — خدمات بنكك والحلول التقنية، اطلب خدمتك بسهولة عبر واتساب.">
+<title>ام احمد للخدمات | خدمات بنكك والحلول التقنية</title>
+<style>
+:root{
+  --bg:#061225;--bg2:#091a31;--panel:rgba(13,31,56,.88);--panel2:#102847;
+  --line:rgba(90,170,255,.22);--blue:#28a9ff;--cyan:#69dcff;--text:#f4f8ff;
+  --muted:#a8bad0;--glow:rgba(35,157,255,.22);--green:#20d889;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.8;
+background:radial-gradient(ellipse at 15% 10%,rgba(0,143,255,.22),transparent 34%),
+radial-gradient(ellipse at 90% 38%,rgba(31,91,190,.18),transparent 32%),
+linear-gradient(145deg,#050d1b,#081a32 55%,#050d1b);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;
+background-image:linear-gradient(rgba(67,160,255,.10) 1px,transparent 1px),linear-gradient(90deg,rgba(67,160,255,.10) 1px,transparent 1px);
+background-size:48px 48px;mask-image:linear-gradient(to bottom,black,transparent 88%)}
+body:after{content:"";position:fixed;width:380px;height:380px;border-radius:50%;background:#087bff;filter:blur(150px);opacity:.10;top:35%;left:-220px;pointer-events:none}
+a{color:inherit}
+.wrap{width:min(100% - 32px,1080px);margin:auto;position:relative}
+header{position:sticky;top:0;z-index:10;background:rgba(5,15,30,.84);border-bottom:1px solid var(--line);backdrop-filter:blur(18px)}
+.top{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:50px;height:50px;border:1px solid rgba(94,198,255,.8);border-radius:16px;display:grid;place-items:center;color:#8be4ff;font-size:27px;
+background:linear-gradient(145deg,rgba(26,139,255,.25),rgba(5,25,52,.8));box-shadow:0 0 25px var(--glow),inset 0 0 16px rgba(62,173,255,.12)}
+.brand h1{font-size:clamp(18px,3vw,25px);margin:0;letter-spacing:.1px}
+.tag{margin:1px 0 0;color:var(--cyan);font-size:12px}
+.top-contact{display:flex;align-items:center;gap:9px}
+.btn{border:1px solid rgba(80,177,255,.4);background:rgba(20,62,104,.38);color:#d9f3ff;border-radius:25px;padding:9px 15px;font-size:12px;text-decoration:none;white-space:nowrap;transition:.2s}
+.btn:hover{background:rgba(27,115,190,.35);box-shadow:0 0 20px var(--glow)}
+.hero{text-align:center;padding:64px 0 36px}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(72,181,255,.45);background:rgba(12,67,115,.25);color:#9de7ff;border-radius:25px;padding:7px 17px;font-size:12px;font-weight:bold;box-shadow:0 0 24px var(--glow)}
+.hero h2{font-size:clamp(27px,5vw,43px);line-height:1.45;margin:20px auto 10px;max-width:820px}
+.hero h2 span{color:#69d7ff;text-shadow:0 0 24px rgba(47,174,255,.35)}
+.hero p{color:var(--muted);font-size:15px;max-width:680px;margin:0 auto 25px}
+.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.primary{display:inline-flex;justify-content:center;align-items:center;gap:8px;text-decoration:none;color:#031323;font-weight:bold;background:linear-gradient(100deg,#32b7ff,#8ce8ff);border-radius:12px;padding:12px 22px;box-shadow:0 7px 25px rgba(26,157,255,.25);transition:.2s}
+.primary:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(26,157,255,.4)}
+.secondary{display:inline-flex;justify-content:center;align-items:center;text-decoration:none;color:#d7efff;border:1px solid rgba(91,185,255,.4);border-radius:12px;padding:11px 20px;background:rgba(15,43,75,.55)}
+.search{max-width:620px;margin:32px auto 0;display:flex;align-items:center;gap:10px;border:1px solid rgba(86,168,235,.35);background:rgba(9,25,46,.88);border-radius:14px;padding:8px 16px;color:var(--cyan);box-shadow:0 0 25px rgba(0,0,0,.16)}
+.search input{border:0;outline:0;background:transparent;color:white;width:100%;padding:7px;font:inherit}
+.search input::placeholder{color:#829ab5}
+.section{padding:28px 0 34px}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:18px}
+.heading{font-size:21px;margin:0}
+.heading span{color:var(--cyan)}
+.section-note{font-size:12px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{position:relative;background:linear-gradient(155deg,rgba(17,43,73,.94),rgba(8,24,44,.97));border:1px solid var(--line);border-radius:19px;padding:20px;overflow:hidden;
+box-shadow:0 12px 32px rgba(0,0,0,.18),inset 0 1px rgba(255,255,255,.035);transition:.25s}
+.card:before{content:"";position:absolute;inset:0 auto auto 0;width:100%;height:2px;background:linear-gradient(90deg,transparent,#38baff,transparent);opacity:.7}
+.card:hover{transform:translateY(-4px);border-color:rgba(89,190,255,.5);box-shadow:0 16px 38px rgba(0,0,0,.26),0 0 24px rgba(35,157,255,.10)}
+.card-top{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.service-icon{flex:0 0 54px;width:54px;height:54px;border-radius:16px;display:grid;place-items:center;font-size:25px;color:#8ce5ff;
+background:linear-gradient(145deg,rgba(22,136,230,.28),rgba(8,33,62,.9));border:1px solid rgba(81,185,255,.35);box-shadow:0 0 18px rgba(31,153,255,.10)}
+.card h3{font-size:17px;margin:0 0 4px}
+.card-desc{font-size:12px;color:var(--muted);margin:0}
+.price{display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid rgba(80,157,218,.2);background:rgba(5,19,36,.5);border-radius:12px;padding:10px 13px;margin:17px 0 13px;color:#b8cbe0;font-size:12px}
+.price b{font-size:17px;color:#8be1ff;white-space:nowrap}
+.request{display:flex;align-items:center;justify-content:center;gap:8px;text-align:center;background:linear-gradient(100deg,#1597ec,#55d0ff);color:#031526;font-weight:bold;border-radius:11px;padding:11px 12px;font-size:13px;text-decoration:none;box-shadow:0 5px 17px rgba(28,155,238,.18);transition:.2s}
+.request:hover{filter:brightness(1.08);box-shadow:0 7px 22px rgba(28,155,238,.32)}
+.extra{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.extra a{background:linear-gradient(145deg,rgba(17,43,73,.92),rgba(8,24,44,.96));border:1px solid var(--line);border-radius:15px;padding:17px 10px;text-align:center;font-size:13px;font-weight:bold;text-decoration:none;color:#eaf7ff;transition:.2s}
+.extra a:hover{border-color:rgba(90,190,255,.55);box-shadow:0 0 20px var(--glow);transform:translateY(-2px)}
+.extra b{display:block;color:var(--cyan);font-size:22px;margin-bottom:4px}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:8px 0 22px}
+.trust-item{border:1px solid rgba(83,166,230,.18);background:rgba(9,28,50,.6);border-radius:13px;padding:14px;text-align:center;color:#d9eaff;font-size:12px}
+.trust-item strong{display:block;color:var(--cyan);font-size:18px;margin-bottom:3px}
+.empty{display:none;text-align:center;color:var(--muted);padding:22px}
+footer{border-top:1px solid var(--line);text-align:center;color:#9eb1c8;padding:24px 0 88px;font-size:12px;margin-top:20px}
+.wa{position:fixed;bottom:20px;left:20px;background:var(--green);color:#032719;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:26px;text-decoration:none;box-shadow:0 5px 24px rgba(32,216,137,.4);z-index:20;transition:.2s}
+.wa:hover{transform:scale(1.07)}
+@media(max-width:650px){
+ .wrap{width:min(100% - 22px,1080px)}.top{min-height:72px}.logo{width:43px;height:43px;border-radius:14px}
+ .tag{font-size:10px}.top-contact .btn{font-size:10px;padding:7px 9px}.hero{padding:43px 0 25px}
+ .hero p{font-size:13px}.grid{gap:10px}.card{padding:13px;border-radius:15px}
+ .service-icon{width:44px;height:44px;flex-basis:44px;border-radius:13px;font-size:21px}
+ .card h3{font-size:13px}.card-desc{font-size:10px}.price{font-size:10px;padding:8px;margin:13px 0 10px}.price b{font-size:13px}
+ .request{font-size:11px;padding:9px 5px}.heading{font-size:17px}.section-note{display:none}
+ .extra{gap:7px}.extra a{font-size:10px;padding:12px 5px}.trust{gap:7px}.trust-item{font-size:10px;padding:10px 5px}
+}
+@media(max-width:390px){.brand h1{font-size:16px}.top-contact .btn{font-size:9px;padding:6px 7px}.grid{grid-template-columns:1fr}.hero h2{font-size:25px}}
+</style>
+</head>
+<body>
+<header><div class="wrap top">
+  <div class="brand"><div class="logo">✧</div><div><h1>ام احمد للخدمات</h1><p class="tag">خدمات بنكك والحلول التقنية</p></div></div>
+  <div class="top-contact"><a class="btn" href="https://wa.me/249961542852" target="_blank" rel="noopener noreferrer">واتساب: 096 154 2852</a></div>
+</div></header>
+
+<main class="wrap">
+<section class="hero">
+  <div class="pill">✦ خدمة موثوقة • تعامل واضح • متابعة واهتمام</div>
+  <h2>حلولك التقنية وخدمات بنكك <span>بكل سهولة</span></h2>
+  <p>نساعدك في إنجاز الخدمات ومتابعة الطلبات بكل وضوح واهتمام. اختر الخدمة المناسبة واضغط على زر الطلب للتواصل مباشرة عبر واتساب.</p>
+  <div class="hero-actions">
+    <a class="primary" href="https://wa.me/249961542852" target="_blank" rel="noopener noreferrer">◉ تواصل معنا عبر واتساب</a>
+    <a class="secondary" href="#services">استعرض الخدمات ↓</a>
+  </div>
+  <label class="search">⌕ <input id="search" placeholder="ابحث عن الخدمة... (حساب، وطني، مرجعي، تحويلة)"></label>
+</section>
+
+<section class="trust">
+  <div class="trust-item"><strong>◈</strong>سهولة تقديم الطلب</div>
+  <div class="trust-item"><strong>✓</strong>وضوح في الأسعار</div>
+  <div class="trust-item"><strong>◉</strong>تواصل مباشر عبر واتساب</div>
+</section>
+
+<section class="section" id="services">
+  <div class="section-head"><h2 class="heading"><span>✦</span> الخدمات الأساسية والأسعار</h2><span class="section-note">اختر الخدمة لبدء طلبك</span></div>
+  <div class="grid" id="cards">
+    <article class="card" data-search="استخراج رقم حساب بنكك حساب بنكك">
+      <div class="card-top"><div class="service-icon">▣</div><div><h3>استخراج رقم حساب بنكك</h3><p class="card-desc">خدمة استخراج رقم الحساب ومتابعة الطلب.</p></div></div>
+      <div class="price">السعر <b>70,000 ج.س</b></div>
+      <a class="request" href="https://wa.me/249961542852?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D8%B3%D8%AA%D8%AE%D8%B1%D8%A7%D8%AC%20%D8%B1%D9%82%D9%85%20%D8%AD%D8%B3%D8%A7%D8%A8%20%D8%A8%D9%86%D9%83%D9%83" target="_blank" rel="noopener noreferrer">◉ اطلب الخدمة عبر واتساب</a>
+    </article>
+    <article class="card" data-search="تحديث الرقم الوطني الرقم الوطني">
+      <div class="card-top"><div class="service-icon">▤</div><div><h3>تحديث بيانات الرقم الوطني</h3><p class="card-desc">تقديم طلب تحديث بيانات الرقم الوطني.</p></div></div>
+      <div class="price">السعر <b>75,000 ج.س</b></div>
+      <a class="request" href="https://wa.me/249961542852?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AA%D8%AD%D8%AF%D9%8A%D8%AB%20%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%20%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A" target="_blank" rel="noopener noreferrer">◉ اطلب الخدمة عبر واتساب</a>
+    </article>
+    <article class="card" data-search="تحديث الرقم المرجعي حل مشكلة الرقم المرجعي جواز رقم وطني">
+      <div class="card-top"><div class="service-icon">#</div><div><h3>تحديث الرقم المرجعي</h3><p class="card-desc">المساعدة في طلب تحديث الرقم المرجعي.</p></div></div>
+      <div class="price">السعر <b>85,000 ج.س</b></div>
+      <a class="request" href="https://wa.me/249961542852?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AA%D8%AD%D8%AF%D9%8A%D8%AB%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%20%D8%A7%D9%84%D9%85%D8%B1%D8%AC%D8%B9%D9%8A" target="_blank" rel="noopener noreferrer">◉ اطلب الخدمة عبر واتساب</a>
+    </article>
+    <article class="card" data-search="استخراج رقم الهاتف تحويلة خاطئة تحويل خاطئ رقم هاتف">
+      <div class="card-top"><div class="service-icon">☎</div><div><h3>استخراج رقم الهاتف لتحويلة خاطئة</h3><p class="card-desc">المساعدة في متابعة مشكلة التحويلة الخاطئة.</p></div></div>
+      <div class="price">السعر <b>70,000 ج.س</b></div>
+      <a class="request" href="https://wa.me/249961542852?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%A7%D8%B3%D8%AA%D8%AE%D8%B1%D8%A7%D8%AC%20%D8%B1%D9%82%D9%85%20%D8%A7%D9%84%D9%87%D8%A7%D8%AA%D9%81%20%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84%D8%A9%20%D8%AE%D8%A7%D8%B7%D8%A6%D8%A9" target="_blank" rel="noopener noreferrer">◉ اطلب الخدمة عبر واتساب</a>
+    </article>
+  </div>
+  <div class="empty" id="empty">لا توجد خدمة مطابقة لبحثك.</div>
+</section>
+
+<section class="section">
+  <div class="section-head"><h2 class="heading"><span>✦</span> خدمات إضافية</h2></div>
+  <div class="extra">
+    <a href="https://wa.me/249961542852?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D9%81%D8%AA%D8%AD%20%D8%AD%D8%B3%D8%A7%D8%A8%20%D8%A8%D9%86%D9%83%D9%83" target="_blank" rel="noopener noreferrer"><b>▣</b>فتح حساب بنكك</a>
+    <a href="https://wa.me/249961542852?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AA%D8%AD%D8%AF%D9%8A%D8%AB%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%20%D8%A7%D9%84%D9%85%D8%B1%D8%AC%D8%B9%D9%8A" target="_blank" rel="noopener noreferrer"><b>#</b>تحديث الرقم المرجعي</a>
+    <a href="https://wa.me/249961542852?text=%D9%84%D8%AF%D9%8A%20%D9%85%D8%B4%D9%83%D9%84%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8" target="_blank" rel="noopener noreferrer"><b>⚙</b>حل ومتابعة مشاكل الحسابات</a>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> ام احمد للخدمات — جميع الحقوق محفوظة<br>للتواصل عبر واتساب: +249 96 154 2852</footer>
+<a class="wa" href="https://wa.me/249961542852" target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب">◉</a>
+<script>
+const s=document.getElementById('search'),cs=[...document.querySelectorAll('.card')],e=document.getElementById('empty');
+s.addEventListener('input',()=>{let q=s.value.trim().toLowerCase(),n=0;cs.forEach(c=>{let ok=(c.innerText+' '+c.dataset.search).toLowerCase().includes(q);c.style.display=ok?'':'none';if(ok)n++});e.style.display=n?'none':'block'});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
